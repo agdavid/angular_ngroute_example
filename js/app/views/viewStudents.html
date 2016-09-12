@@ -1,0 +1,18 @@
+<div class="container">
+  
+  <h2> View Students </h2>
+  Search
+  <br />
+
+  <input type='text' ng-model='name' placeholder='Enter search term...' />
+  <br />
+
+  <ul>
+    <li ng-repeat='student in ctrl.students | filter: name'>
+      {{ student.name }} | {{ student.city }}
+
+    </li>
+    
+  </ul>
+  
+</div>
