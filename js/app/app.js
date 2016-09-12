@@ -1,2 +1,16 @@
 angular
   .module('app', ['ngRoute'])
+  .config(function($routeProvider) {
+    $routeProvider
+      .when('/view1', {
+        templateUrl: 'view1.html',
+        controller: 'FirstController'
+      })
+      .when('/view2', {
+        templateUrl: 'view2.html',
+        controller: 'SecondController'
+      })
+      .otherwise({
+        redirectTo: '/view1'
+      });
+  });
