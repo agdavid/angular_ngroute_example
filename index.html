@@ -4,9 +4,17 @@
   <title></title>
 </head>
 <body>
-  <script <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
-  <script src="js/app/app.js"></script>
-  <script src="js/app/controllers/StudentController.js"></script>
+  <div ng-app='mainApp'>
+    <div ng-controller="studentController as ctrl">
+      <div ng-view></div>
+    </div>    
+  
+
+
+    <script <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="js/app/app.js"></script>
+    <script src="js/app/controllers/StudentController.js"></script>
+  </div>
 </body>
 </html>

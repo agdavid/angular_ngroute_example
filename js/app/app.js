@@ -4,11 +4,11 @@ angular
     $routeProvider
       .when('/home', {
         templateUrl: 'js/app/views/home.html',
-        controller: 'StudentController'
+        controller: 'studentController'
       })
       .when('/viewStudents', {
         templateUrl: 'js/app/views/viewStudents.html',
-        controller: 'StudentController'
+        controller: 'studentController'
       })
       .otherwise({
         redirectTo: '/home'
